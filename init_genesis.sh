@@ -40,21 +40,21 @@ echo -n $account4 >> genesis.json
 echo '0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",' >> genesis.json
   
 echo '  "alloc": {
-    "bD9E1Eb20FF75653eF480179a4D231253BAd9938": { "balance": "10000000000000" },
-    "b549a50a5Dbf7F8957646B770413F2750790E119": { "balance": "10000000000000" },
-    "255Af8ac8E9743B85De49604d2dEC4674CD72f93": { "balance": "10000000000000" },
-    "2f4Cfb3669EB8F13697Bb6Bd4044d7dC2cA3390A": { "balance": "10000000000000" },
-    "48205115d36c89502D17C9772829053a9C223912": { "balance": "10000000000000" },' >> genesis.json
+    "bD9E1Eb20FF75653eF480179a4D231253BAd9938": { "balance": "100000000000000000000" },
+    "b549a50a5Dbf7F8957646B770413F2750790E119": { "balance": "100000000000000000000" },
+    "255Af8ac8E9743B85De49604d2dEC4674CD72f93": { "balance": "100000000000000000000" },
+    "2f4Cfb3669EB8F13697Bb6Bd4044d7dC2cA3390A": { "balance": "100000000000000000000" },
+    "48205115d36c89502D17C9772829053a9C223912": { "balance": "100000000000000000000" },' >> genesis.json
 echo -n "    \"$account0" >> genesis.json
-echo '": { "balance": "1000000" },' >> genesis.json
+echo '": { "balance": "100000000000000000000" },' >> genesis.json
 echo -n "    \"$account1" >> genesis.json
-echo '": { "balance": "1000000" },' >> genesis.json
+echo '": { "balance": "100000000000000000000" },' >> genesis.json
 echo -n "    \"$account2" >> genesis.json
-echo '": { "balance": "1000000" },' >> genesis.json
+echo '": { "balance": "100000000000000000000" },' >> genesis.json
 echo -n "    \"$account3" >> genesis.json
-echo '": { "balance": "1000000" },' >> genesis.json
+echo '": { "balance": "100000000000000000000" },' >> genesis.json
 echo -n "    \"$account4" >> genesis.json
-echo '": { "balance": "1000000" }' >> genesis.json
+echo '": { "balance": "100000000000000000000" }' >> genesis.json
 
 
  echo ' }

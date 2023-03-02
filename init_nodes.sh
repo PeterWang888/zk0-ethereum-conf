@@ -32,15 +32,15 @@ geth --datadir node4 init genesis.json
 # geth --datadir node0 dumpconfig --networkid $chainid --http --http.addr 0.0.0.0 --http.port 8545 --ws.port 8546 --authrpc.port 8551 --port 30303 > configs/config0.toml
 # geth --datadir node1 dumpconfig --networkid $chainid --http --http.addr 0.0.0.0 --http.port 9545 --ws.port 9546 --authrpc.port 8552 --port 30304 > configs/config1.toml
 # geth --datadir node2 dumpconfig --networkid $chainid --http --http.addr 0.0.0.0 --http.port 10545 --ws.port 10546 --authrpc.port 8553 --port 30305  > configs/config2.toml
-# geth --datadir node3 dumpconfig --networkid $chainid --http --http.addr 0.0.0.0 --http.port 11545 --ws.port 12546 --authrpc.port 8554 --port 30306  > configs/config3.toml
+# geth --datadir node3 dumpconfig --networkid $chainid --http --http.addr 0.0.0.0 --http.port 11545 --ws.port 11546 --authrpc.port 8554 --port 30306  > configs/config3.toml
 # geth --datadir node4 dumpconfig --networkid $chainid --http --http.addr 0.0.0.0 --http.port 12545 --ws.port 12546 --authrpc.port 8555 --port 30307  > configs/config4.toml
 
 
-nohup geth --datadir node0 --networkid $chainid --http --http.addr 0.0.0.0 --http.port 8545 --ws.port 8546 --authrpc.port 8551 --port 30303  > logs/node0.log 2>&1 &
-nohup geth --datadir node1 --networkid $chainid --http --http.addr 0.0.0.0 --http.port 9545 --ws.port 9546 --authrpc.port 8552 --port 30304  > logs/node1.log 2>&1 &
-nohup geth --datadir node2 --networkid $chainid --http --http.addr 0.0.0.0 --http.port 10545 --ws.port 10546 --authrpc.port 8553 --port 30305  > logs/node2.log 2>&1 &
-nohup geth --datadir node3 --networkid $chainid --http --http.addr 0.0.0.0 --http.port 11545 --ws.port 12546 --authrpc.port 8554 --port 30306  > logs/node3.log 2>&1 &
-nohup geth --datadir node4 --networkid $chainid --http --http.addr 0.0.0.0 --http.port 12545 --ws.port 12546 --authrpc.port 8555 --port 30307  > logs/node4.log 2>&1 &
+nohup geth --datadir node0 --networkid $chainid --http --http.addr 0.0.0.0 --http.port 8545 --ws --ws.origins "*" --ws.addr 0.0.0.0 --ws.port 8546 --authrpc.port 8551 --port 30303  > logs/node0.log 2>&1 &
+nohup geth --datadir node1 --networkid $chainid --http --http.addr 0.0.0.0 --http.port 9545 --ws --ws.origins "*" --ws.addr 0.0.0.0 --ws.port 9546 --authrpc.port 8552 --port 30304  > logs/node1.log 2>&1 &
+nohup geth --datadir node2 --networkid $chainid --http --http.addr 0.0.0.0 --http.port 10545 --ws --ws.origins "*" --ws.addr 0.0.0.0 --ws.port 10546 --authrpc.port 8553 --port 30305  > logs/node2.log 2>&1 &
+nohup geth --datadir node3 --networkid $chainid --http --http.addr 0.0.0.0 --http.port 11545 --ws --ws.origins "*" --ws.addr 0.0.0.0 --ws.port 11546 --authrpc.port 8554 --port 30306  > logs/node3.log 2>&1 &
+nohup geth --datadir node4 --networkid $chainid --http --http.addr 0.0.0.0 --http.port 12545 --ws --ws.origins "*" --ws.addr 0.0.0.0 --ws.port 12546 --authrpc.port 8555 --port 30307  > logs/node4.log 2>&1 &
 sleep 5
 
 
