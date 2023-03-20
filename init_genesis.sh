@@ -36,7 +36,7 @@ echo -n $account0 >> genesis.json
 echo -n $account1 >> genesis.json
 echo -n $account2 >> genesis.json
 echo -n $account3 >> genesis.json
-echo -n $account4 >> genesis.json
+# echo -n $account4 >> genesis.json
 echo '0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",' >> genesis.json
   
 echo '  "alloc": {
