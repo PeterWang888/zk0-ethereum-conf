@@ -30,7 +30,7 @@ nohup geth --datadir node2 --networkid $chainid --mine --miner.etherbase $accoun
 nohup geth --datadir node3 --networkid $chainid --mine --miner.etherbase $account3 --unlock $account3 --password passwd.txt --allow-insecure-unlock --http --http.api "eth,net,txpool,web3,admin,debug,personal,miner" --http.addr 0.0.0.0 --http.port 11545 -ws --ws.api "eth,net,txpool,web3,admin,debug,personal,miner" --ws.origins "*" --ws.addr 0.0.0.0 --ws.port 11546 --authrpc.port 8554 --port 30306 --http.corsdomain "*" --graphql --syncmode full --config configs/config3.toml --isvs --vscontr "0x3c122a1904F27DD3A2EB9A6C0D1A03C9560527b9" > logs/node3.log 2>&1 &
 
 # full node
-nohup geth --datadir node4 --networkid $chainid --mine --miner.etherbase $account4 --unlock $account4 --password passwd.txt --allow-insecure-unlock --http --http.api "eth,net,txpool,web3,admin,debug,personal,miner" --http.addr 0.0.0.0 --http.port 12545 -ws --ws.api "eth,net,txpool,web3,admin,debug,personal,miner" --ws.origins "*" --ws.addr 0.0.0.0 --ws.port 12546 --authrpc.port 8555 --port 30307 --http.corsdomain "*" --graphql --syncmode full --config configs/config4.toml --isvs --vscontr "0x3c122a1904F27DD3A2EB9A6C0D1A03C9560527b9" > logs/node4.log 2>&1 &
+nohup geth --datadir node4 --networkid $chainid --unlock $account4 --password passwd.txt --allow-insecure-unlock --http --http.api "eth,net,txpool,web3,admin,debug,personal,miner" --http.addr 0.0.0.0 --http.port 12545 -ws --ws.api "eth,net,txpool,web3,admin,debug,personal,miner" --ws.origins "*" --ws.addr 0.0.0.0 --ws.port 12546 --authrpc.port 8555 --port 30307 --http.corsdomain "*" --graphql --syncmode full --config configs/config4.toml --isvs --vscontr "0x3c122a1904F27DD3A2EB9A6C0D1A03C9560527b9" > logs/node4.log 2>&1 &
 
 
 
